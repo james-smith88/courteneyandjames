@@ -99,7 +99,6 @@ body {
 	right: 0;
 	z-index: -1;
 	opacity: 0.2;
-	background-image: url('../images/the-buttery-2.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -123,9 +122,16 @@ body {
 	color: #333;
 	text-decoration: none;
 	display: block;
-	padding: 1.6em 2em;
-	font-size: 1.2em;
+	padding: 1.6em 1em;
+	font-size: 1em;
 	font-family: 'Josefin Slab';
+}
+
+@media (min-width: 25em) {
+	.top-nav-items__item a {
+		font-size: 1.2em;
+		padding: 1.6em 2em;
+	}
 }
 
 .top-nav-items__item a:hover {
