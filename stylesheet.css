@@ -51,6 +51,10 @@ table {
 
 /* --- Website styles --- */
 
+a {
+	color: inherit;
+}
+
 body {
 	color: #333;
 	font-family: 'Open Sans';
@@ -82,13 +86,20 @@ body {
 
 @media (min-width: 25em) {
 	.page-sub-heading {
-		font-size: 2.2em;
+		font-size: 3em;
 	}
 }
 
 .page-header {
 	padding: 6em 2em;
 	position: relative;
+	background: #f5fcf5;
+}
+
+.page-header-content {
+	text-align: center;
+	position: relative;
+	z-index: 1;
 }
 
 .page-header-bg {
@@ -97,7 +108,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: -1;
+	z-index: 0;
 	opacity: 0.2;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -105,9 +116,7 @@ body {
 }
 
 .top-nav {
-	background: #fafafa;
-	border-bottom: 1px dotted #EEE;
-	border-top: 1px dotted #EEE;
+	background: #e5f8e5;
 }
 
 .top-nav-items {
@@ -129,7 +138,7 @@ body {
 
 @media (min-width: 25em) {
 	.top-nav-items__item a {
-		font-size: 1.2em;
+		font-size: 1.4em;
 		padding: 1.6em 2em;
 	}
 }
@@ -139,14 +148,23 @@ body {
 }
 
 .page-section {
+	text-align: center;
 	padding: 4em 2em;
+	border-bottom: 1px solid #e5f8e5;
+	margin: 0 auto;
+	max-width: 50em;
 }
 
 .section-heading {
 	font-size: 3em;
-	margin-bottom: 1em;
+	margin-bottom: 0.66em;
 	text-align: center;
-	font-family: 'Pacifico';
+	font-family: 'Josefin Slab';
+}
+
+.section-heading-icon {
+	width: 3.75em;
+	margin-bottom: 1.2em;
 }
 
 .section-sub-heading {
@@ -156,16 +174,71 @@ body {
 	font-family: 'Josefin Slab';
 }
 
+.section-small-heading {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Josefin Slab';
+}
+
 .section-text {
 	text-align: center;
-	max-width: 40em;
+	max-width: 44em;
 	margin: 0 auto;
+	overflow: hidden;
+}
+
+.section-text_col {
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+@media (min-width: 45em) {
+	.section-text_col {
+		padding: 0 1em;
+		width: 50%;
+		float: left;
+	}
 }
 
 .section-text p {
 	line-height: 1.6em;
+	margin-bottom: 1.6em;
 }
 
 .venue-map {
 	height: 300px;
+}
+
+.icon-rings {
+	width: 4em;
+	margin-top: 1em;
+}
+
+.profile-photo-wrap {
+	border: 3px solid #e5f8e5;
+	border-radius: 100%;
+	width: 180px;
+	height: 180px;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.profile-photo {
+	overflow: hidden;
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+}
+
+.site-legal {
+	display: block;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.site-legal a {
+	color: inherit;
 }
