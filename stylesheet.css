@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans|Josefin+Slab);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- Website styles --- */
+
+body {
+	color: #333;
+	font-family: 'Open Sans';
+}
+
+.page-heading {
+    font-family: 'Pacifico';
+    color: #333;
+    font-size: 4em;
+    text-align: center;
+	margin-bottom: 0.5em;
+}
+
+@media (min-width: 25em) {
+	.page-heading {
+		font-size: 8em;
+	}
+}
+
+.page-sub-heading {
+    font-family: 'Josefin Slab';
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.page-sub-heading small {
+	font-size: 0.6em;
+}
+
+@media (min-width: 25em) {
+	.page-sub-heading {
+		font-size: 2.2em;
+	}
+}
+
+.page-header {
+	padding: 6em 2em;
+	position: relative;
+}
+
+.page-header-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.2;
+	background-image: url('../images/the-buttery-2.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.top-nav {
+	background: #fafafa;
+	border-bottom: 1px dotted #EEE;
+	border-top: 1px dotted #EEE;
+}
+
+.top-nav-items {
+	text-align: center;
+}
+
+.top-nav-items__item {
+	display: inline-block;
+}
+
+.top-nav-items__item a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding: 1.6em 2em;
+	font-size: 1.2em;
+	font-family: 'Josefin Slab';
+}
+
+.top-nav-items__item a:hover {
+	text-decoration: underline;
+}
+
+.page-section {
+	padding: 4em 2em;
+}
+
+.section-heading {
+	font-size: 3em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Pacifico';
+}
+
+.section-sub-heading {
+	font-size: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Josefin Slab';
+}
+
+.section-text {
+	text-align: center;
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.section-text p {
+	line-height: 1.6em;
+}
+
+.venue-map {
+	height: 300px;
+}
